@@ -3,7 +3,7 @@ require 'test_helper'
 class MicropostsInterfaceTest < ActionDispatch::IntegrationTest
 
   def setup
-    @user = users(:michael)
+    @user = users(:chad)
   end
 
   test "micropost interface" do
@@ -30,7 +30,7 @@ class MicropostsInterfaceTest < ActionDispatch::IntegrationTest
       delete micropost_path(first_micropost)
     end
     # Visit a different user.
-    get user_path(users(:archer))
+    get user_path(users(:vera))
     assert_select 'a', text: 'delete', count: 0
   end
 end
