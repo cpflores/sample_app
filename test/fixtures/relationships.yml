@@ -1,0 +1,15 @@
+one:
+  follower: chad
+  followed: justin
+
+two:
+  follower: chad
+  followed: lita
+
+three:
+  follower: justin
+  followed: chad
+
+four:
+  follower: vera
+  followed: chad
